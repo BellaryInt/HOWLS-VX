@@ -35,7 +35,7 @@ async function loadSession() {
     filer.download((err, data) => {
       if (err) throw err;
       fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-        console.log('*sᴇssɪᴏɴ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ [🌟]*');
+        console.log('Saved Creds ✅');
       });
     });
   }
@@ -63,7 +63,7 @@ async function connectToWA() {
     consocheckSecretKeyle.log("[PLUGIN ERROR]");
     return;
         }*/
-console.log("Connecting HOWLS-DEV...");
+console.log("HOWLS-DEV...Starting..");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
